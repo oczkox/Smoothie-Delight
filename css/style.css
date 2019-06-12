@@ -1,0 +1,134 @@
+/* brand color: #ffae00 */
+:root {
+    --lightcolor: rgb(234, 243, 253);
+    --maincolor: #ffae00;
+  }
+  /* body {
+    position: relative;
+  } */
+  h1, h2, h3, h4 {
+    font-family: 'Pacifico', cursive;
+  }
+
+  #home {
+    background-image: url(/img/bg1920.jpg);
+  }
+
+  @media screen and (max-width: 425px) {
+    #home {
+        background-image: url(/img/bg414.jpg);
+    }
+  }
+
+  a, a:hover {
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+   
+  .bg-lightcolor {
+    background: var(--lightcolor);
+  }
+   
+  .bg-color {
+    background: var(--maincolor);
+  }
+   
+  .text-color {
+    color: var(--maincolor);
+  }
+
+  .container-fluid-max {
+    max-width: 1440px;
+  }
+   
+  .cover {
+    background: no-repeat center/cover;
+  }
+   
+  .p-15 {
+    padding: 15px;
+  }
+
+  .scroll .page-header {
+    background: var(--maincolor);
+  }
+   
+  .page-header {
+    transition: background 0.5s ease-in-out;
+  }
+   
+  .page-header .navbar {
+    padding: 1rem 0;
+  }
+   
+  .page-header .navbar-toggler {
+    border-color: var(--white);
+  }
+   
+  @media screen and (max-width: 991px) {
+    .page-header {
+      background: var(--maincolor);
+    }
+  }
+
+  .scroll .home {
+    transform: scale(0.98);
+  }
+   
+  .home {
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+
+  .home .container-fluid {
+    z-index: 10;
+  }
+
+  .popular figure {
+    margin-bottom: 30px;
+  }
+   
+  .popular figcaption {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+   
+  .popular img {
+    filter: grayscale(100%) blur(3px);
+    transition: transform 0.5s, filter 0.75s;
+  }
+   
+  .popular a:hover img {
+    transform: scale(1.25);
+    filter: none;
+  }
+
+  .page-footer .footer-links {
+    text-align: right;
+  }
+   
+  @media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+      text-align: center;
+    }
+  }
