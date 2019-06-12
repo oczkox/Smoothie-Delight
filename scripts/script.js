@@ -1,6 +1,5 @@
 const $body = $("body");
 const $header = $(".page-header");
-// const $navCollapse = $(".navbar-collapse");
 const scrollClass = "scroll";
 
 $(window).on("scroll", () => {

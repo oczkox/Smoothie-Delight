@@ -3,9 +3,6 @@
     --lightcolor: rgb(234, 243, 253);
     --maincolor: #ffae00;
   }
-  /* body {
-    position: relative;
-  } */
   h1, h2, h3, h4 {
     font-family: 'Pacifico', cursive;
   }
@@ -14,9 +11,23 @@
     background-image: url(/img/bg1920.jpg);
   }
 
+  #bg-more {
+    background-image: url(/img/SDmore.jpg);
+  }
+
+  #bg-family {
+    background-image: url(/img/SDfamily.jpg);
+  }
+
   @media screen and (max-width: 425px) {
     #home {
         background-image: url(/img/bg414.jpg);
+    }
+    #bg-more {
+      background-image: url(/img/SDmore-m.jpg);
+    }
+    #bg-family {
+      background-image: url(/img/SDfamily-m.jpg);
     }
   }
 
