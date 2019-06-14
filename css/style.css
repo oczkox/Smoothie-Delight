@@ -8,26 +8,26 @@
   }
 
   #home {
-    background-image: url(/img/bg1920.jpg);
+    background-image: url(../img/bg1920.jpg);
   }
 
   #bg-more {
-    background-image: url(/img/SDmore.jpg);
+    background-image: url(../img/SDmore.jpg);
   }
 
   #bg-family {
-    background-image: url(/img/SDfamily.jpg);
+    background-image: url(../img/SDfamily.jpg);
   }
 
   @media screen and (max-width: 425px) {
     #home {
-        background-image: url(/img/bg414.jpg);
+      background-image: url(../img/bg414.jpg);
     }
     #bg-more {
-      background-image: url(/img/SDmore-m.jpg);
+      background-image: url(../img/SDmore-m.jpg);
     }
     #bg-family {
-      background-image: url(/img/SDfamily-m.jpg);
+      background-image: url(../img/SDfamily-m.jpg);
     }
   }
 
@@ -64,13 +64,13 @@
   }
 
   .scroll .page-header {
-    background: var(--maincolor);
+    background-color: var(--maincolor);
   }
    
   .page-header {
-    transition: background 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
   }
-   
+
   .page-header .navbar {
     padding: 1rem 0;
   }
@@ -142,4 +142,8 @@
     .page-footer .footer-child {
       text-align: center;
     }
+  }
+
+.form-control:focus {
+    background-color: #ffae0034;
   }
